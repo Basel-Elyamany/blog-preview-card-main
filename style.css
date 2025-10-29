@@ -1,0 +1,97 @@
+*{
+    box-sizing: content-box;
+    /* border: red solid 1px; */
+    font-family: "Figtree", sans-serif;
+}
+body{
+    background-color: hsl(47, 88%, 63%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main{
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 20px;
+    width: 23%;
+    height: auto;
+    padding: 25px;
+    box-shadow: 8px 8px;
+    overflow: hidden;
+    position: relative;
+}
+.cool-assets{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+.skill-status{
+    background-color: hsl(47, 88%, 63%);
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px 9px 2px 9px;
+    font-weight: 800;
+    font-size: 16px;
+}
+.skill-date{
+    color: hsl(0, 0%, 7%);
+    font-weight: 500;
+}
+h3{
+    all: unset;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 23px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h3:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+.skill-description{
+    margin: 0;
+    color: hsl(0, 0%, 42%);
+    font-size: 16px;
+    line-height: 27px;
+    padding-bottom: 20px;
+}
+.personal-info{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+.my-picture{
+    margin-right: 10px;
+    width: 34px;
+}
+
+@media (max-width: 1125px) {
+    main{width: 30%;}
+}
+
+@media (max-width: 900px) {
+    main{width: 40%;}
+    h3{font-size: 18px;}
+    .skill-description{font-size: 15px;}
+    .my-name{font-size: 14px;}
+    .skill-date{font-size: 14px;}
+}
+
+@media (max-width: 600px) {
+    main{width: 50%;}
+    .skill-description{font-size: 13px;}
+    .my-name{font-size: 14px;}
+    .skill-date{font-size: 12px;}
+}
+
+@media (max-width: 450px) {
+    main{width: 70%;}
+    .skill-description{font-size: 11px;}
+    .my-name{font-size: 14px;}
+    .skill-date{font-size: 10px;}
+}
